@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <div class="list">
+    {{ range .Pages }}
+      <div class="wide-card">
+        <span class="wide-card-title">{{ .Params.DisplayName }}</span>
+        <span class="wide-card-links-container">
+          <a href="{{ .Permalink }}">Info</a>
+          <a href="">Download Catalogues</a>
+          <a href="">Browse Products</a>
+        </span>
+        <span class="wide-card-logo-container">
+          <img class="wide-card-logo" src="{{ .Params.LogoURL }}" alt="Failed to load {{ .Params.DisplayName }} logo."/>
+        </span>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
+

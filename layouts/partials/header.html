@@ -1,0 +1,15 @@
+<header>
+  <a id="logo-anchor" href="/">
+    <img src="/images/logo.png" id="logo"/>
+  </a>
+
+  <nav>
+    <ul>
+      <li><a href="/" class="{{ if eq "home" . }}selected{{ end }}">Home</a></li>
+      <li><a href="/products/" class="{{ if eq "products" . }}selected{{ end }}">Products</a></li>
+      <li><a href="/contact/" class="{{ if eq "contact" . }}selected{{ end }}">Contact Us</a></li>
+      <li><a href="/social/" class="{{ if eq "social" . }}selected{{ end }}">Social</a></li>
+      <li><a href="/locate/" class="{{ if eq "locate" . }}selected{{ end }}">Locate Us</a></li>
+    </ul>
+  </nav>
+</header>
