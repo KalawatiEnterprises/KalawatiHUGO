@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
 @import url("/css/fontawesome/all.min.css");
-* {
-  transition: background-color 0.4s;
-  transition: color 0.4s;
-}
-
 .footer {
   background-color: #1a2a30;
   color: lightgray;
@@ -116,17 +111,13 @@
     margin: 1rem auto;
   }
 }
-* {
-  transition: background-color 0.4s;
-  transition: color 0.4s;
-}
-
 header {
   position: sticky;
   top: 0;
   height: 5rem;
   width: 100%;
   background-color: rgba(26, 42, 48, 0.8);
+  z-index: 1;
   box-sizing: border-box;
   display: flex;
   overflow: hidden;

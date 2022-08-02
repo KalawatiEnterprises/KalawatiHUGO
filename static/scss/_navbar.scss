@@ -15,7 +15,6 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 @import "colors";
-@import "transitions";
 
 $navbar-height: 5rem;
 $navbar-alt-height: 3.8rem;
@@ -29,6 +28,7 @@ header {
   width: 100%;
   // background-color: $navbar-background-color;
   background-color: rgba($navbar-background-color, 0.8);
+  z-index: 1;
   box-sizing: border-box;
   display: flex;
   overflow: hidden;
@@ -72,7 +72,7 @@ nav {
     font-size: 1.3rem;
     font-weight: 300;
     padding: 3px;
-    transition: background-color $time-short;
+    transition: background-color 0.4s;
   }
 
   a:hover, a:active {

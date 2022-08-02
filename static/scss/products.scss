@@ -14,13 +14,19 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-@import "../colors";
-@import "../transitions";
-@import "../cards";
-@import "../switcher/switcher";
+@import "colors";
+@import "cards";
+@import "switcher/switcher";
 
 $card-height: 25rem;
 $card-width: 30rem;
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .card:hover { @include card-hover; }
 
@@ -37,7 +43,7 @@ $card-width: 30rem;
     bottom: 0.5rem; left: 0;
     width: 100%;
     transform: scale(0, 0);
-    transition: transform $time-short - 0.3;
+    transition: 0.1;
 
     .card-button-link {
       height: $switcher-button-height - 0.8;
@@ -49,7 +55,7 @@ $card-width: 30rem;
       justify-content: center;
       color: $dark-foreground-color;
       background-color: $bright-background-color;
-      transition: color $time-short;
+      transition: color 0.4s;
     }
 
     .card-button-link:hover {

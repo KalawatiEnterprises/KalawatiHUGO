@@ -15,7 +15,6 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 @import "colors";
-@import "transitions";
 
 $border: 1px solid $dark-background-color;
 
@@ -69,7 +68,7 @@ $wide-card-height: 7rem;
   font-size: 1.5rem;
   font-weight: 300;
   text-decoration: underline;
-  transition: background-color $time-short;
+  transition: background-color 0.4s;
   padding: 0.1rem;
 }
 

@@ -122,54 +122,81 @@
 }
 .list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.wide-card {
+.card:hover {
+  box-shadow: 0.1rem 0.1rem 0.3rem 0.08rem #232627;
+  transform: scale(1.05, 1.05);
+}
+.card:hover .card-button-links-container {
+  display: flex;
+  transform: scale(1, 1);
+}
+
+.card {
+  position: relative;
   background-color: #FFFFFF;
   border: 1px solid #232627;
-  height: 7rem;
-  width: 80%;
+  min-height: 25rem;
+  width: 30rem;
   margin: 1rem;
-  padding: 0 1.5rem;
+  padding: 0.3rem 0.7rem;
   box-sizing: border-box;
   box-shadow: 0.1rem 0.1rem 0.3rem 0.05rem rgba(35, 38, 39, 0.7);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
+  transition: transform 0.3s;
 }
-.wide-card .wide-card-title {
+.card .card-title {
   font-weight: 700;
   font-size: 3rem;
   color: #000000;
-  font-size: 2.5rem;
-  width: 15rem;
 }
-.wide-card .wide-card-links-container {
-  display: flex;
-  justify-content: center;
+.card .card-subtitle {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #6c6c6c;
+  margin-bottom: 0.3rem;
 }
-.wide-card .wide-card-links-container a {
-  margin: 0 0.5rem;
+.card .card-description {
+  font-weight: 400;
+  font-size: 1.4rem;
   color: #000000;
+}
+.card .card-button-links-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  bottom: 0.5rem;
+  left: 0;
+  width: 100%;
+  transform: scale(0, 0);
+  transition: 0.1;
+}
+.card .card-button-links-container .card-button-link {
+  height: 2.2rem;
   font-size: 1.5rem;
   font-weight: 300;
   text-decoration: underline;
-  transition: background-color 0.4s;
-  padding: 0.1rem;
-}
-.wide-card .wide-card-links-container a:hover {
-  background-color: #7a4bf5;
-}
-.wide-card .wide-card-logo-container {
   display: flex;
+  align-items: center;
   justify-content: center;
-  width: 15rem;
+  color: #000000;
+  background-color: #FFFFFF;
+  transition: color 0.4s;
 }
-.wide-card .wide-card-logo-container img {
-  max-width: 15rem;
-  max-height: 6.5rem;
+.card .card-button-links-container .card-button-link:hover {
+  color: #10e3b2;
+}
+.card .card-images-container {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card .card-images-container img {
+  height: 15rem;
+  border: 1px solid #232627;
 }
