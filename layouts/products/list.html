@@ -4,11 +4,11 @@
     {{ range .Pages }}
       <div class="card">
         <div class="card-title">{{ .Params.Name }}</div>
-        <div class="card-subtitle">{{ .Params.Brand }}{{ .Params.Categories }}</div>
+        <div class="card-subtitle">{{ .Params.Brand }} {{ index (.Params.Categories) 0 }}</div>
         <div class="card-description">{{ .Params.Description }}</div>
         <div class="card-images-container">
-          <img src="/photos/products/{{ .Params.Name }}/0" alt="{{ .Params.Name }} Front Image"/>
-          <img src="/photos/products/{{ .Params.Name }}/1" alt="{{ .Params.Name }} Side Image"/>
+          <img src="/images/products/{{ .Params.Name }}/0.webp" alt="{{ .Params.Name }} Front Image"/>
+          <img src="/images/products/{{ .Params.Name }}/1.webp" alt="{{ .Params.Name }} Side Image"/>
         </div>
       </div>
     {{ end }}

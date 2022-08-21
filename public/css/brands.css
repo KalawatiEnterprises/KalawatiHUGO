@@ -173,38 +173,3 @@
   max-width: 15rem;
   max-height: 6.5rem;
 }
-
-@media only screen and (max-device-width: 800px) {
-  .wide-card {
-    height: 14rem;
-    width: 90%;
-    max-width: 30rem;
-    margin: 1rem;
-    padding: 0 1.5rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .wide-card .wide-card-logo-container {
-    order: 1;
-    display: flex;
-    justify-content: center;
-    width: 15rem;
-  }
-  .wide-card .wide-card-logo-container img {
-    max-width: 15rem;
-    max-height: 6.5rem;
-  }
-  .wide-card .wide-card-title {
-    order: 2;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .wide-card .wide-card-links-container {
-    order: 3;
-    flex-wrap: wrap;
-  }
-  .wide-card .wide-card-links-container a {
-    font-size: 1.2rem;
-  }
-}

@@ -67,44 +67,7 @@ $logo-width: 15rem;
 
     img {
       max-width: $logo-width;
-      max-height: $wide-card-height - 0.5;
-    }
-  }
-}
-
-@media only screen and (max-device-width: 800px) {
-  .wide-card {
-    height: 14rem;
-    width: 90%;
-    max-width: $card-width;
-    margin: 1rem;
-    padding: 0 1.5rem;
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .wide-card-logo-container {
-      order: 1;
-      display: flex;
-      justify-content: center;
-      width: $logo-width;
-
-      img {
-        max-width: $logo-width;
-        max-height: $wide-card-height - 0.5;
-      }
-    }
-    .wide-card-title {
-      order: 2;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-    .wide-card-links-container {
-      order: 3;
-      flex-wrap: wrap;
-      a {
-        font-size: 1.2rem;
-      }
+      max-height: $wide-card-height - 0.5; 
     }
   }
 }
