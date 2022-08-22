@@ -65,6 +65,7 @@
         background-color: $bright-background-color;
         border-radius: 2rem;
         border: 0.13rem solid $dark-background-color;
+        transition: background-color 0.4s;
       }
 
       a:hover {
