@@ -5,11 +5,40 @@
 
   <nav>
     <ul>
-      <li><a href="/" class="{{ if eq "home" . }}selected{{ end }}">Home</a></li>
-      <li><a href="/products/" class="{{ if eq "products" . }}selected{{ end }}">Products</a></li>
-      <li><a href="/contact/" class="{{ if eq "contact" . }}selected{{ end }}">Contact Us</a></li>
-      <li><a href="/social/" class="{{ if eq "social" . }}selected{{ end }}">Social</a></li>
-      <li><a href="/locate/" class="{{ if eq "locate" . }}selected{{ end }}">Locate Us</a></li>
+      <li>
+        <a href="/" class="{{ if eq "home" . }}selected{{ end }}">
+          <span class="fa-solid fa-house"></span>
+          <span class="text">Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="/products/" class="{{ if eq "products" . }}selected{{ end }}">
+          <span class="fa-solid fa-list"></span>
+          <span class="text">Products</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="/contact/" class="{{ if eq "contact" . }}selected{{ end }}">
+          <span class="fa-solid fa-phone"></span>
+          <span class="text">Contact Us</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="/social/" class="{{ if eq "social" . }}selected{{ end }}">
+          <i class="fa-solid fa-hashtag"></i>
+          <span class="text">Social</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="/locate/" class="{{ if eq "locate" . }}selected{{ end }}">
+          <i class="fa-solid fa-location-dot"></i>
+          <span class="text">Locate Us</span>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>

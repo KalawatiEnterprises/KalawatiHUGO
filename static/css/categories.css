@@ -120,39 +120,40 @@
     width: 7rem;
   }
 }
-.list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.wide-cards-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .wide-card {
   background-color: #FFFFFF;
   border: 1px solid #232627;
-  height: 7rem;
-  width: 80%;
+  height: 14rem;
+  width: 46rem;
   margin: 1rem;
   padding: 0 1.5rem;
   box-sizing: border-box;
   box-shadow: 0.1rem 0.1rem 0.3rem 0.05rem rgba(35, 38, 39, 0.7);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
 }
-.wide-card .wide-card-title {
+.wide-card .title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.wide-card .title-container .wide-card-title {
   font-weight: 700;
   font-size: 3rem;
   color: #000000;
   font-size: 2.5rem;
-  width: 15rem;
+  top: 0;
+  left: 0.5rem;
 }
-.wide-card .wide-card-links-container {
-  display: flex;
-  justify-content: center;
-}
-.wide-card .wide-card-links-container a {
+.wide-card .title-container a {
   margin: 0 0.5rem;
   color: #000000;
   font-size: 1.5rem;
@@ -160,51 +161,8 @@
   text-decoration: underline;
   transition: background-color 0.4s;
   padding: 0.1rem;
+  font-size: 2rem;
 }
-.wide-card .wide-card-links-container a:hover {
+.wide-card .title-container a:hover {
   background-color: #7a4bf5;
-}
-.wide-card .wide-card-logo-container {
-  display: flex;
-  justify-content: center;
-  width: 15rem;
-}
-.wide-card .wide-card-logo-container img {
-  max-width: 15rem;
-  max-height: 6.5rem;
-}
-
-@media only screen and (max-device-width: 800px) {
-  .wide-card {
-    height: 14rem;
-    width: 90%;
-    max-width: 30rem;
-    margin: 1rem;
-    padding: 0 1.5rem;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .wide-card .wide-card-logo-container {
-    order: 1;
-    display: flex;
-    justify-content: center;
-    width: 15rem;
-  }
-  .wide-card .wide-card-logo-container img {
-    max-width: 15rem;
-    max-height: 6.5rem;
-  }
-  .wide-card .wide-card-title {
-    order: 2;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .wide-card .wide-card-links-container {
-    order: 3;
-    flex-wrap: wrap;
-  }
-  .wide-card .wide-card-links-container a {
-    font-size: 1.2rem;
-  }
 }
