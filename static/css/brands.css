@@ -58,6 +58,7 @@
   background-color: #FFFFFF;
   border-radius: 2rem;
   border: 0.13rem solid #232627;
+  transition: background-color 0.4s;
 }
 .category-switcher-container .category-switcher .buttons a:hover {
   background-color: #7a4bf5;
@@ -174,7 +175,12 @@
   max-height: 6.5rem;
 }
 
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-device-width: 1200px) {
+  .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .wide-card {
     height: 14rem;
     width: 90%;

@@ -72,7 +72,12 @@ $logo-width: 15rem;
   }
 }
 
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-device-width: 1200px) {
+  .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .wide-card {
     height: 14rem;
     width: 90%;

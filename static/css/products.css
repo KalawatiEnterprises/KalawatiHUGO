@@ -58,6 +58,7 @@
   background-color: #FFFFFF;
   border-radius: 2rem;
   border: 0.13rem solid #232627;
+  transition: background-color 0.4s;
 }
 .category-switcher-container .category-switcher .buttons a:hover {
   background-color: #7a4bf5;
