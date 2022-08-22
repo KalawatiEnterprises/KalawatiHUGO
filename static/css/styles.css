@@ -179,16 +179,16 @@ nav .selected {
 
 @media only screen and (max-width: 600px) {
   #logo-anchor {
-    width: 4rem;
-    height: 4rem;
+    width: 4.2rem;
+    height: 4.2rem;
   }
   header {
-    height: 4rem;
+    height: 4.2rem;
   }
   nav {
-    height: 3.2rem;
+    height: 3.4rem;
     width: 25rem;
-    border-radius: 0.8rem;
+    border-radius: 0.85rem;
   }
   nav a {
     font-size: 1.2rem;
@@ -198,20 +198,8 @@ nav .selected {
   }
 }
 @media only screen and (max-width: 500px) {
-  #logo-anchor {
-    width: 4rem;
-    height: 4rem;
-  }
-  header {
-    height: 4rem;
-  }
   nav {
-    height: 3.2rem;
     width: calc(80% - 2rem);
-    border-radius: 0.8rem;
-  }
-  nav a {
-    font-size: 1.2rem;
   }
   nav a .text {
     font-size: 0.7rem;
@@ -219,16 +207,16 @@ nav .selected {
 }
 @media only screen and (max-width: 350px) {
   #logo-anchor {
-    width: 3rem;
-    height: 3rem;
+    width: 3.2rem;
+    height: 3.2rem;
   }
   header {
-    height: 3rem;
+    height: 3.2rem;
   }
   nav {
-    height: 2.5rem;
+    height: 2.7rem;
     width: calc(80% - 1.5rem);
-    border-radius: 0.625rem;
+    border-radius: 0.675rem;
   }
   nav a {
     font-size: 1rem;
